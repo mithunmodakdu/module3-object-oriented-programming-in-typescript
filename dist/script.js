@@ -1,0 +1,1 @@
+import "./3-2-class-and-object.js";
