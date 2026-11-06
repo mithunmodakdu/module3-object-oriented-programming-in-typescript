@@ -3,7 +3,8 @@
 class Employee{
   constructor(
     public name: string,
-    private _baseSalary: number
+    // private _baseSalary: number
+    protected _baseSalary: number
   ){}
 
   set baseSalary(newSalary: number){
@@ -50,4 +51,5 @@ const man1 = new Manager("Bakar", 150000, 20)
 console.log(man1)
 man1.baseSalary = 250000
 console.log(man1.describe())
+// console.log(man1._baseSalary)
 console.log(man1.describeWork())
