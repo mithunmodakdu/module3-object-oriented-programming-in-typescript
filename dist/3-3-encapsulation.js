@@ -14,6 +14,9 @@ class Employee {
     get baseSalary() {
         return this._baseSalary;
     }
+    getBaseSalaryWithBonus() {
+        return this.baseSalary + 5000;
+    }
     set baseSalary(newSalary) {
         if (newSalary < 0) {
             throw new Error("Salary cannot be negative value");
@@ -24,4 +27,5 @@ class Employee {
 const employee1 = new Employee("Mithun", 32750);
 employee1.baseSalary = 88000;
 console.log(employee1.baseSalary);
+console.log(employee1.getBaseSalaryWithBonus());
 export {};

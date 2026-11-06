@@ -17,6 +17,10 @@ class Employee {
     return this._baseSalary;
   }
 
+  getBaseSalaryWithBonus(): number{
+    return this.baseSalary + 5000;
+  }
+
   
 
   set baseSalary(newSalary: number){
@@ -29,6 +33,8 @@ class Employee {
 
 const employee1 = new Employee("Mithun", 32750);
 employee1.baseSalary = 88000
-console.log(employee1.baseSalary)
+console.log(employee1.baseSalary);
+console.log(employee1.getBaseSalaryWithBonus())
+
 
 
